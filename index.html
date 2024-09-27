@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arang</title>
+    <style>
+        *{
+            padding: 0;margin: 0;box-sizing: border-box;
+        }
+        .menu{
+            width: 100%;
+            height: 40px;
+            background-color: rgb(15, 1, 1);
+            display: flex;
+            justify-content: center;
+            /* align-items: center; */
+            /* flex-grow: 1; */
+            >ul{
+                width: 50%;
+                display:flex;
+                
+                >li{
+                    position: relative;
+                    flex-grow: 1;
+                    list-style-type: none;
+                    >a{
+                        font-size: 20px;
+                        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                        text-transform: capitalize;
+                        text-decoration: none;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 100%;
+                        color: wheat;
+                        &:hover{
+                            background-color: wheat;
+                            color: black;
+                            width: 100%;
+
+                        }
+                        
+
+                    } 
+                    &:hover>ul{
+                            display: flex;
+                            flex-wrap: wrap;
+                            
+                        }      
+                
+                    >ul{
+                       
+                        position: absolute;
+                        left: 0;top:40px;  
+                        width: 100%;  
+                        display:none;  
+                        background-color: #0a0101;                                                            
+                         
+                        >li{
+                            list-style-type: none;
+                            width: 100%;
+                            height: 40px;
+                            border-bottom: 2px solid white;
+                            
+                            >a{
+                                color: wheat;
+                                text-decoration: none;
+                                display: flex;
+                                width: 100%;
+                                height: 100%;
+                                align-items: center;
+                                
+                                padding-left: 10px;
+                                font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                                &:hover{
+                                    background-color: wheat;
+                                    color: #0a0101;
+                                    /* width: 100%; */
+                                    /* margin: auto; */
+                                    /* display: contents; */
+
+                                }
+
+                            }
+
+                        }
+                    }
+
+                }
+            }
+        }    
+    </style>
+</head>
+<body>
+    <nav class="menu">
+        <ul>
+            <li><a href="index1.html">file</a></li>
+            <li><a href="index2.html">setting</a>
+                <ul>
+                    <li><a href="https://www.tgju.org/">menu1</a></li>
+                    <li><a href="https://www.tgju.org/">menu2</a></li>
+                    <li><a href="https://www.tgju.org/">menu3</a></li>
+                    <li><a href="https://www.tgju.org/">menu4</a></li>
+                </ul>
+            </li>            
+            <li><a href="index3.html">about</a></li>
+            <li><a href="index4.html">view</a></li>
+        </ul>
+    </nav>    
+</body>
+</html>

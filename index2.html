@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;margin: 0;box-sizing: border-box;
+        }
+        .wrraper{
+            height: 400px;width: 60%;
+            border: 2px solid black;
+            background: greenyellow;
+            margin: auto;
+            display: flex;
+            div{
+                border: 2px solid brown;
+                width: 120px;
+                height: 100px;
+                flex: 1 1 150px;
+                &:nth-of-type(3){
+                    flex-grow: 3;
+                }
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="wrraper">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    
+</body>
+</html>
